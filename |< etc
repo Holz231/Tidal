@@ -9,3 +9,16 @@
 
 -- < points to where the values come from, and | goes on the side where the
 -- rhythmic structure comes from.
+
+-----------------------------------------------------------
+-- Instead of taking values from one side, you can add the values together, by
+-- using '+' instead of '>' or '<'.
+
+---------------------------------------------------------------
+d1 $ every 2 (hurry 2) $ every 3 (# squiz 5) $ sound "bd sd [~ bd] [cp bd*2]"
+-----------------------------------------------------------------
+d1 $ splice 8 "0 1 2 3 4 5 6 7" $ sound "break:4"
+
+-- Now with a more messed-up pattern
+d1 $ splice 8 "6 1 [2 3] ~ 4 1 6*2 7" $ sound "break:4"
+--------------------------------------------------------------
